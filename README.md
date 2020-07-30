@@ -23,8 +23,11 @@ Which was extremely verbose. Even though it works, it’s not ideal.Libraries li
 With **Swift 4** and later you can now use the *Codable* protocol. Your Swift struct or class merely has to adopt that protocol, and you get JSON encoding and decoding for free.
 
 In this project I’ve used nested types which are great general-purpose approach to complex JSON data structures. I’ve also used the **MVVM** Structure which arranged as below:
+
 **Model:** Includes AppConstants, Country(sample model) and mapper function
+
 **ViewModel:** Prepares URLRequest and Ask the NetworkManager to download data
+
 **ViewController:** Get the mapped the data from ViewModel and update the data
 
 Let’s take a look at the flow:
